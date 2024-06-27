@@ -1,0 +1,25 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('https://cdn.pixabay.com/photo/2020/07/04/06/41/clouds-5368444_1280.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#temp-container {
+  width: 400px;
+  /* height: 350px; */
+  background: linear-gradient(131deg, rgba(43,165,255,1) 0%, rgba(59,15,97,1) 0%, rgba(117,1,255,1) 53%);
+}
+
+
