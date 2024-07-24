@@ -1,6 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import searchIcon from "../src/imgSrc/searchIcon.png";
 import windSpeed from "../src/imgSrc/wind-icon.png";
 import humidity from "../src/imgSrc/weather-icon.png";
@@ -18,7 +16,7 @@ function App() {
       setError('')
       setInput('')
       const response = await axios.get(
-        `http://api.weatherapi.com/v1/current.json?key=34f768206ca94c309df95920242506&q=${city}&aqi=no`
+        `http://api.weatherapi.com/v1/current.json?key=${import.meta.env.VITE_WEATHER_API_KEY}&q=${city}&aqi=no`
       );
       const data = response.data;
 
